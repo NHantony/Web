@@ -5,19 +5,20 @@
 
     <div class="mb-3 form-group">
         <label class = "form-label" asp-for = "Author">Author</label>
-        <input class="form-control" asp-for = "Author" />
+        <input class="form-control" asp-for = "Author" type="text" />
+        <span asp-validation-for="@Model.Author" class="text-danger"></span>
     </div>
     <div class ="mb-3 form-group">
         <label class = "form-label" asp-for = "Title">Title</label>
-        <input class="form-control" asp-for = "Author" />
+        <input class="form-control" asp-for = "Author" type="text" />
     </div>
     <div class ="mb-3 form-group">
         <label class = "form-label" asp-for="Content">Content</label>
-        <input class="form-control" asp-for="Content" />
+        <input class="form-control" asp-for="Content" type="text" />
     </div>
     <div class ="mb-3 form-group">
         <label class = "form-label" asp-for = "Time">Time</label>
-        <input asp-for= "Time" type="datetime" class="form-control" />
+        <input asp-for= "Time" type="datetime-local" class="form-control" />
     </div>
     <div class ="mb-3 form-group" form-check>
         <label class = "form-check-label" asp-for = "isDone">Done</label>
